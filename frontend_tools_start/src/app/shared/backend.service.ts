@@ -16,4 +16,10 @@ export class BackendService {
     let endpoint = '/tools';
     return this.http.get<Tool[]>(this.backendUrl + endpoint);
   }
+
+  // delete one entry
+  deleteOneTool(id:string): Observable<any> {
+    let endpoint = '/tools';
+    return this.http.delete<any>(this.backendUrl + endpoint + "/" +id);
+  }
 }

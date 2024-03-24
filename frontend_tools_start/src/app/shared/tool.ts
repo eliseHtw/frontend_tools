@@ -1,5 +1,5 @@
 export interface Tool {
-    id: number;
+    id: string;
     kategorie: string;
     artikel: string;
     details: string;

@@ -1,23 +1,49 @@
-    <h1>Welche * Tools * Kisten sind ausleihbar?</h1>
+<h1>Übersicht: Welche * Tools * Kisten sind ausleihbar?</h1>
 
-    <input type="text" placeholder="Suche" [formControl]="search" (input)="filterMembers()" />
-    <table class="table table-striped table-hover align-middle">
-        <thead class="table-info">
+<input type="text" placeholder="Suche" [formControl]="search" (input)="filterMembers()" />
+<table class="table table-striped table-hover align-middle">
+    <thead class="table-info">
+        <tr>
+            <th class="bund">Id</th>
+            <th>Kategorie</th>
+            <th>Artikel</th>
+            <th>Details</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of filterArray;">
+            <td class="bund">{{ item.id }}</td>
+            <td>{{ item.kategorie }}</td>
+            <td>{{ item.artikel }}</td>
+            <td>{{ item.details }}</td>
+            <td>{{ item.status }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
             <tr>
-                <th class="bund">Id</th>
-                <th>Kategorie</th>
-                <th>Artikel</th>
-                <th>Details</th>
-                <th>Status</th>
+                <th scope="col">#</th>
+                <th scope="col">Kategorie</th>
+                <th scope="col">Artikel</th>
+                <th scope="col">Details</th>
+                <th scope="col">Status</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let item of filterArray; let i = index;">
-                <td class="bund">{{ i+1 }}</td>
-                <td>{{ item.kategorie }}</td>
-                <td>{{ item.artikel }}</td>
-                <td>{{ item.details }}</td>
-                <td>{{ item.status }}</td>
-            </tr>
+            @for (tool of tools; track tool.id) {
+                <tr>
+                    <th scope="row">{{ tool.id }}</th>
+                    <td>{{ tool.kategorie }}</td>
+                    <td>{{ tool.artikel }}</td>
+                    <td>{{ tool.details }}</td>
+                    <td>{{ tool.status }}</td>
+                    
+                </tr>
+            }
         </tbody>
     </table>
+</div>

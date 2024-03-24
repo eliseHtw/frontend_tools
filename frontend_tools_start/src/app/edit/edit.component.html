@@ -1,0 +1,28 @@
+<h1>* Tools * Kisten bearbeiten</h1>
+
+<table class="table table-striped table-hover align-middle">
+    <thead class="table-info">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Kategorie</th>
+            <th scope="col">Artikel</th>
+            <th scope="col">Details</th>
+            <th scope="col">Status</th>
+            <th scope="col">Ändern</th>
+            <th scope="col">Löschen</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (tool of tools; track tool.id) {
+            <tr>
+                <th scope="row">{{ tool.id }}</th>
+                <td>{{ tool.kategorie }}</td>
+                <td>{{ tool.artikel }}</td>
+                <td>{{ tool.details }}</td>
+                <td>{{ tool.status }}</td>
+                <td><a class="btn btn-sm" style="background-color: purple; color: lightcoral;" [routerLink]="['/update', tool.id]">update</a></td>
+                <td><button class="btn btn-sm btn-secondary" (click)="deleteOneTool(tool.id)">delete</button></td>
+            </tr>
+        }
+    </tbody>
+</table>
