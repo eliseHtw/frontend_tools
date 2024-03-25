@@ -8,7 +8,7 @@
             <th scope="col">Artikel</th>
             <th scope="col">Details</th>
             <th scope="col">Status</th>
-            <th scope="col">Ändern</th>
+            <th scope="col">Änderungen</th>
             <th scope="col">Löschen</th>
         </tr>
     </thead>
@@ -20,8 +20,8 @@
                 <td>{{ tool.artikel }}</td>
                 <td>{{ tool.details }}</td>
                 <td>{{ tool.status }}</td>
-                <td><a class="btn btn-sm" style="background-color: purple; color: lightcoral;" [routerLink]="['/update', tool.id]">update</a></td>
-                <td><button class="btn btn-sm btn-secondary" (click)="deleteOneTool(tool.id)">delete</button></td>
+                <td><a class="btn btn-sm" style="background-color: purple; color: lightcoral;" [routerLink]="['/update', tool.id]">aktualisieren</a></td>
+                <td><button class="btn btn-sm btn-secondary" (click)="deleteOneTool(tool.id)">löschen</button></td>
             </tr>
         }
     </tbody>
