@@ -1,19 +1,10 @@
-h1 {
-    padding-top: 4%;
-    padding-left: 4%;
-}
-
 input {
-    margin: 2%;
-}
-
-table, input {
-    margin-left: 4%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
 }
 
 table {
     width: 92%;
-    margin-bottom: 3em;
 }
 
 .bund {

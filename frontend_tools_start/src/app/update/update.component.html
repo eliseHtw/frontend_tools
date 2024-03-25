@@ -40,13 +40,13 @@
   
     <div class="row">
       <div class="col">
-        <button type="button" class="w-100 btn btn-success" style="background-color: purple; color: lightcoral;" (click)="update(content)">Aktualisieren</button>
+        <button type="button" class="w-100 btn btn-success" style="background-color: purple; color: lightcoral;" (click)="update(content)"><i class="bi bi-pencil-square"></i> Aktualisieren</button>
       </div>
       <div class="col">
-        <button type="button" class="w-100 btn" style="background-color: lightcoral; color: purple;" (click)="cancel()">Zeilen leeren</button>
+        <button type="button" class="w-100 btn" style="background-color: lightcoral; color: purple;" (click)="cancel()"><i class="bi bi-cloud-haze2"></i> Zeilen leeren</button>
       </div>
       <div class="col">
-        <a class="w-100 btn btn-secondary" [routerLink]="['/edit']">Abbrechen</a>
+        <a class="w-100 btn btn-secondary" [routerLink]="['/edit']"><i class="bi bi-skip-backward"></i> Abbrechen</a>
       </div>
     </div>
   </div>

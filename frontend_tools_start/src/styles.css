@@ -2,3 +2,7 @@
 body {
     background-color: rgb(191, 184, 196);
 }
+
+main {
+    padding: 4%;
+}
