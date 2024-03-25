@@ -8,7 +8,7 @@ import { ModalDismissReasons, NgbDatepickerModule, NgbModal } from '@ng-bootstra
 @Component({
   selector: 'app-update',
   standalone: true,
-  imports: [ ReactiveFormsModule, RouterLink, NgbDatepickerModule ],
+  imports: [ NgbDatepickerModule, ReactiveFormsModule, RouterLink ],
   templateUrl: './update.component.html',
   styleUrl: './update.component.css'
 })
