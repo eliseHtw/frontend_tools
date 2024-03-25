@@ -1,4 +1,4 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Component, OnInit, TemplateRef, inject } from '@angular/core';
 import { Tool } from '../shared/tool';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { BackendService } from '../shared/backend.service';
@@ -8,24 +8,25 @@ import { ModalDismissReasons, NgbDatepickerModule, NgbModal } from '@ng-bootstra
 @Component({
   selector: 'app-update',
   standalone: true,
-  imports: [ ReactiveFormsModule, RouterLink ],
+  imports: [ ReactiveFormsModule, RouterLink, NgbDatepickerModule ],
   templateUrl: './update.component.html',
   styleUrl: './update.component.css'
 })
 export class UpdateComponent implements OnInit {
   id: string = '';
   tool!: Tool;
+  closeResult = '';
 
   kategorieFC = new FormControl('', [Validators.required]);
   artikelFC = new FormControl('', [Validators.required]);
   detailsFC = new FormControl('', [Validators.required]);
   statusFC = new FormControl('', [Validators.required]);
   
-  constructor(
-    private route: ActivatedRoute,
-    private bs: BackendService,
-    private router: Router
-  ) {}
+  private route = inject(ActivatedRoute);
+  private bs = inject(BackendService);
+  private router = inject(Router);
+  private modalService = inject(NgbModal);
+  
 
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id') || '';
@@ -79,7 +80,7 @@ export class UpdateComponent implements OnInit {
       .then(
         (result) => {
           this.closeResult = `Closed with: ${result}`;
-          this.router.navigate(['/tools']);
+          this.router.navigate(['/edit']);
         },
         (reason) => {
           this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
