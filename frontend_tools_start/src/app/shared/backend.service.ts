@@ -29,7 +29,7 @@ export class BackendService {
     return this.http.get<Tool>(this.backendUrl + endpoint + '/' + id);
   }
 
-  // get one entry via artiekl
+  // get one entry via artikel
   getOneArtikel(artikel: string): Observable<Tool>{
     let endpoint = '/tools';
     return this.http.get<Tool>(this.backendUrl + endpoint + '/artikel/' + artikel);

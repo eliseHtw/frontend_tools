@@ -3,5 +3,5 @@ export interface Tool {
     kategorie: string;
     artikel: string;
     details: string;
-    status: boolean;
+    status: string;
 }
