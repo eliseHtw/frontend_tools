@@ -37,7 +37,7 @@ export class KisteComponent implements OnInit {
     })
   }
 
-  filterMembers() {
+  filterTools() {
     console.log(this.search.value)
     let searchString = this.search.value ? this.search.value : '';
     console.log('in table --> searchString', searchString);

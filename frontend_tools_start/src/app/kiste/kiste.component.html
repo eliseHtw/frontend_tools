@@ -1,6 +1,6 @@
 <h1>Übersicht: Welche * Tools * Kisten sind ausleihbar?</h1>
 
-<input type="text" placeholder="Suche" [formControl]="search" (input)="filterMembers()" />
+<input type="text" placeholder="Suche" [formControl]="search" (input)="filterTools()" />
 <table class="table table-striped table-hover align-middle">
     <thead class="table-info">
         <tr>
@@ -40,8 +40,7 @@
                     <td>{{ tool.kategorie }}</td>
                     <td>{{ tool.artikel }}</td>
                     <td>{{ tool.details }}</td>
-                    <td>{{ tool.status }}</td>
-                    
+                    <td>{{ tool.status }}</td>  
                 </tr>
             }
         </tbody>
