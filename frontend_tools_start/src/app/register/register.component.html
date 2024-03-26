@@ -16,7 +16,7 @@
             <label for="password">Passwort</label>
         </div>
         <div class="my-3 col-12 col-md-9"> 
-            <input class="form-control" type="text" placeholder="Passwort" id="password" required [formControl]="passwordFC"
+            <input class="form-control" type="password" placeholder="Passwort" id="password" required [formControl]="passwordFC"
             [class]="passwordFC.touched ? passwordFC.valid ? 'is-valid' : 'is-invalid' : ''" />
             <div class="invalid-feedback">
                 Bitte ein Passwort eintragen.
@@ -26,7 +26,7 @@
             <label for="email">E-Mail</label>
         </div>
         <div class="my-3 col-12 col-md-9">
-            <input class="form-control" type="text" placeholder="E-Mail" id="email" required [formControl]="emailFC"
+            <input class="form-control" type="email" placeholder="E-Mail" id="email" required [formControl]="emailFC"
             [class]="emailFC.touched ? emailFC.valid ? 'is-valid' : 'is-invalid' : ''" />
             <div class="invalid-feedback">
                 Bitte eine E-Mail-Adresse eintragen.
