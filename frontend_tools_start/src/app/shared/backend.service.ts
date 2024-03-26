@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
 import { Tool } from './tool';
+import { User } from './user';
 
 @Injectable({
   providedIn: 'root'
@@ -45,5 +46,11 @@ export class BackendService {
   updateOneTool(tool: Tool, id: string): Observable<Tool> {
     let endpoint = '/tools';
     return this.http.put<Tool>(this.backendUrl + endpoint + '/' + id, tool);
+  }
+
+  // create one user
+  registerUser(user: User): Observable<User> {
+    let endpoint = '/users';
+    return this.http.post<User>(this.backendUrl + endpoint, user);
   }
 }
