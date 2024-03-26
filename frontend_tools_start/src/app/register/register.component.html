@@ -19,7 +19,7 @@
             <input class="form-control" type="password" placeholder="Passwort" id="password" required [formControl]="passwordFC"
             [class]="passwordFC.touched ? passwordFC.valid ? 'is-valid' : 'is-invalid' : ''" />
             <div class="invalid-feedback">
-                Bitte ein Passwort eintragen.
+                Bitte ein Passwort mit mindestens 12 Zeichen eintragen.
             </div>
         </div> 
         <div class="my-4 col-12 col-md-3">
