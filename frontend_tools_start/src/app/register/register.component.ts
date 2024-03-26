@@ -55,7 +55,6 @@ export class RegisterComponent {
         },
       );
 
-      console.log('new user', user);
     } else {
       console.warn('form still invalid!')
     }
