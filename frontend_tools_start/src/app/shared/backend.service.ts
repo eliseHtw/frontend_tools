@@ -3,12 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
 import { Tool } from './tool';
 import { User } from './user';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BackendService {
-  backendUrl = 'http://localhost:4000';
+  /* backendUrl = 'http://localhost:4000'; */
+  backendUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 

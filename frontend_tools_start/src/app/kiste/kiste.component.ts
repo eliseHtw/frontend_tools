@@ -24,6 +24,7 @@ export class KisteComponent implements OnInit {
   tools: Tool[] = [];
   filterArray: Tool [] = [];
   search = new FormControl('');
+  searchString = '';
 
   readAllTools(): void {
     this.bs.getAllTools().subscribe({
@@ -39,14 +40,15 @@ export class KisteComponent implements OnInit {
 
   filterTools() {
     console.log(this.search.value)
-    let searchString = this.search.value ? this.search.value : '';
-    console.log('in table --> searchString', searchString);
+    this.searchString = this.search.value ? this.search.value : '';
+    console.log('in table --> searchString', this.searchString);
 
+     
     this.filterArray = this.tools.filter( (tool)  => {
       return (
-        tool.kategorie.toLowerCase().includes(searchString) ||
-        tool.artikel.toLowerCase().includes(searchString) ||
-        tool.details.toLowerCase().includes(searchString)
+        tool.kategorie.toLowerCase().includes(this.searchString) ||
+        tool.artikel.toLowerCase().includes(this.searchString) ||
+        tool.details.toLowerCase().includes(this.searchString)
       );
     });
   }

@@ -6,29 +6,45 @@
             <label for="username">Benutzer*innenname</label>
         </div>
         <div class="my-3 col-12 col-md-9">
-            <input class="form-control" type="text" placeholder="Benutzer*innenname" id="username" required />
+            <input class="form-control" type="text" placeholder="Benutzer*innenname" id="username" required [formControl]="usernameFC"
+            [class]="usernameFC.touched ? usernameFC.valid ? 'is-valid' : 'is-invalid' : ''" />
+            <div class="invalid-feedback">
+                Bitte einen Namen eintragen.
+            </div>
         </div>
         <div class="my-4 col-12 col-md-3">
             <label for="password">Passwort</label>
         </div>
         <div class="my-3 col-12 col-md-9"> 
-            <input class="form-control" type="text" placeholder="Passwort" id="password" required />
+            <input class="form-control" type="text" placeholder="Passwort" id="password" required [formControl]="passwordFC"
+            [class]="passwordFC.touched ? passwordFC.valid ? 'is-valid' : 'is-invalid' : ''" />
+            <div class="invalid-feedback">
+                Bitte ein Passwort eintragen.
+            </div>
         </div> 
         <div class="my-4 col-12 col-md-3">
             <label for="email">E-Mail</label>
         </div>
         <div class="my-3 col-12 col-md-9">
-            <input class="form-control" type="text" placeholder="E-Mail" id="email" required />
+            <input class="form-control" type="text" placeholder="E-Mail" id="email" required [formControl]="emailFC"
+            [class]="emailFC.touched ? emailFC.valid ? 'is-valid' : 'is-invalid' : ''" />
+            <div class="invalid-feedback">
+                Bitte eine E-Mail-Adresse eintragen.
+            </div>
         </div> 
         <div class="my-4 col-12 col-md-3">
             <label for="role">Rolle</label>
         </div>
         <div class="my-3 col-12 col-md-9">
-            <select class="form-select" aria-label="Default select example" type="text" placeholder="Rolle" id="role" required>
+            <select class="form-select" aria-label="Default select example" type="text" placeholder="Rolle" id="role" required [formControl]="roleFC"
+            [class]="roleFC.touched ? roleFC.valid ? 'is-valid' : 'is-invalid' : ''">
             <option selected>Wähle aus diesem Menü</option>
             <option value="1">Benutzer*in (lesende Rechte)</option>
             <option value="2">Benutzer*in (erweiterte Rechte)</option>
           </select>
+          <div class="invalid-feedback">
+            Bitte eine Auswahl treffen.
+          </div>
         </div>
             
 
@@ -54,7 +70,7 @@
           <tr>
             <td>password</td>
             <td>:</td>
-            <td>{{ passwordFC.value }}</td>
+            <td>GEHEIM! :)</td>
           </tr>
           <tr>
             <td>email</td>

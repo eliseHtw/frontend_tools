@@ -13,6 +13,14 @@
 - Das Repository backend_tools clonen, zu finden unter: [frontend_tools](https://github.com/eliseHtw/frontend_tools.git).
 - Im eigenen Terminal in das Projektverzeichnis frontend_tools navigieren.
 - Um die benötigten Abhängigkeiten zu installieren: `npm install` ausführen.
+- Im Verzeichnis src/app/environment `environment.ts` einfügen, mit folgendem Inhalt:  
+```environment.ts
+    export const environment = {
+        production: true,
+        apiUrl: '<URL_des_eigenen_Backends>'
+    };
+```
+
 - Frontend starten mit `ng serve`. Wenn das Backend erfolgreich gestartet wurde, sollte es dann so aussehen:  
 ![frontend_started](https://github.com/eliseHtw/frontend_tools/blob/main/images_readme/frontend_started.png)
 - Der Website ist dann im Browser über `localhost:4200` erreichbar. Bei Änderungen der Dateien lädt die Seite automatisch neu.

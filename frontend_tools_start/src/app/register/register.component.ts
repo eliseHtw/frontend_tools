@@ -19,19 +19,19 @@ export class RegisterComponent {
   emailFC = new FormControl('', [Validators.required, Validators.email]);
   roleFC = new FormControl('', [Validators.required]);
 
-  bs = inject(BackendService);
-  router = inject(Router);
+  private bs = inject(BackendService);
+  private router = inject(Router);
   private modalService = inject(NgbModal);
   closeResult = '';
 
-  formValid() {
-    return this.usernameFC.valid || this.passwordFC.valid || this.emailFC.valid || this.roleFC.valid;
+  private formValid() {
+    return this.usernameFC.valid && this.passwordFC.valid && this.emailFC.valid && this.roleFC.valid;
   }
 
   register(content: TemplateRef<any>): void {
-    if(!this.formValid()) {
+    if (this.formValid()) {
       let user = {
-        id: 0,
+        id: '',
         username: this.usernameFC.value!,
         password: this.passwordFC.value!,
         email: this.emailFC.value!,

@@ -21,7 +21,7 @@
     </div>
   
     <div class="mb-3 form-floating">
-      <input type="email" class="form-control" id="idDetails" [formControl]="detailsFC"
+      <input type="text" class="form-control" id="idDetails" [formControl]="detailsFC"
         [class]="detailsFC.touched ? detailsFC.valid ? 'is-valid' : 'is-invalid' : ''">
       <label for="idDetails">Details</label>
       <div class="invalid-feedback">
@@ -30,7 +30,7 @@
     </div>
 
     <div class="mb-5 form-floating">
-        <input type="status" class="form-control" id="idStatus" [formControl]="statusFC"
+        <input type="text" class="form-control" id="idStatus" [formControl]="statusFC"
           [class]="statusFC.touched ? statusFC.valid ? 'is-valid' : 'is-invalid' : ''">
         <label for="idStatus">Status</label>
         <div class="invalid-feedback">
