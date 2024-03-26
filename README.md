@@ -12,7 +12,7 @@
 ### Installation
 - Das Repository backend_tools clonen, zu finden unter: [frontend_tools](https://github.com/eliseHtw/frontend_tools.git).
 - Im eigenen Terminal in das Projektverzeichnis frontend_tools navigieren.
-- Um die benötigten node-modules zu installieren: `npm install <entsprechendes-node-module-einsetzen>` ausführen. Die Module sind in der [package.json](https://github.com/eliseHtw/frontend_tools/blob/main/frontend_tools_start/package.json) zu finden.
+- Um die benötigten Abhängigkeiten zu installieren: `npm install` ausführen.
 - Frontend starten mit `ng serve`. Wenn das Backend erfolgreich gestartet wurde, sollte es dann so aussehen:  
 ![frontend_started](https://github.com/eliseHtw/frontend_tools/blob/main/images_readme/frontend_started.png)
 - Der Website ist dann im Browser über `localhost:4200` erreichbar.
