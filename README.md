@@ -16,4 +16,4 @@
 - Frontend starten mit `ng serve`. Wenn das Backend erfolgreich gestartet wurde, sollte es dann so aussehen:  
 ![frontend_started](https://github.com/eliseHtw/frontend_tools/blob/main/images_readme/frontend_started.png)
 - Der Website ist dann im Browser über `localhost:4200` erreichbar.
-- Weitere Infos zu Angular unter [frontend_tools_start](https://github.com/eliseHtw/frontend_tools/blob/main/frontend_tools_start/README.md)
+- Weitere Infos zu Angular in diesem Projekt unter: [frontend_tools_start](https://github.com/eliseHtw/frontend_tools/blob/main/frontend_tools_start/README.md).
