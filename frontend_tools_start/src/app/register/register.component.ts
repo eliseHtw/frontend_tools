@@ -3,6 +3,8 @@ import { BackendService } from '../shared/backend.service';
 import { Router, RouterLink } from '@angular/router';
 import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ModalDismissReasons, NgbDatepickerModule, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { User } from '../shared/user';
+import { AuthService } from '../shared/auth.service';
 
 @Component({
   selector: 'app-register',
@@ -44,6 +46,12 @@ export class RegisterComponent {
         complete: () => console.log('user created')
       });
 
+      /* this.auth.registerUser(this.user).subscribe({
+        next: (response) => console.log('response', response),
+        error: (err) => console.log(err),
+        complete: () => console.log('register completed')
+      }); */
+
       this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result
       .then(
         (result) => {
@@ -56,7 +64,7 @@ export class RegisterComponent {
       );
 
     } else {
-      console.warn('form still invalid!')
+      console.warn('form still invalid!');
     }
   }
 

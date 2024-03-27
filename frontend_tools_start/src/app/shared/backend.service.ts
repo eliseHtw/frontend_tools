@@ -55,4 +55,10 @@ export class BackendService {
     let endpoint = '/users';
     return this.http.post<User>(this.backendUrl + endpoint, user);
   }
+
+  // get all users
+  getAllUsers(): Observable<User[]> {
+    let endpoint = '/users';
+    return this.http.get<User[]>(this.backendUrl + endpoint);
+  }
 }
