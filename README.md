@@ -1,5 +1,38 @@
 # frontend_tools - Das Frontend für: * Tools * - Die Ausleihkiste
 
+## Zweck
+Diese Anwendung soll die Möglichkeit bieten, für kreative Aktionen Hilfsmittel auszuleihen
+
+## Verwendung
+### Home 
+- beschreibt kurz, wofür * Tools * da ist
+- (soll zukünftig für alle sichtbar sein)  
+![Home](https://github.com/eliseHtw/frontend_tools/blob/main/images_readme/tools_home.png)
+
+### Ausleihkiste
+- bietet eine Übersicht über alle Kisten
+- zeigt an, was die Kisten beinhalten
+- zeigt an, welche Kisten verfügbar sind
+- (soll zukünftig für eingeloggte Benutzer*innen mit Leserechten sichtbar sein)
+- ist nach Kategorie, Artikel und Details filterbar  
+![Ausleihkiste](https://github.com/eliseHtw/frontend_tools/blob/main/images_readme/tools_kiste.png)
+
+### Kiste bearbeiten
+- zeigt alle vorhandenen Kisten an
+- es ist möglich neue Kisten hinzuzufügen über den Button `neue Kiste erstellen`
+- es ist möglich einzelne Kisten zu aktualisieren über den Button `aktualisieren`
+- es ist möglich einzelne Kisten ganz zu löschen über den Button `löschen`
+- (soll zu zukünftig nur für eingeloggte Benutzer*innen mit erweiterten Rechten sichtbar sein)  
+![Kiste bearbeiten](https://github.com/eliseHtw/frontend_tools/blob/main/images_readme/tools_edit.png)
+
+### Login
+- hier entsteht eine Login-Seite
+
+### Registrieren
+- hier können sich neue Nutzer*innen registrieren
+- benötigt wird ein Benutzer*innenname, ein Passwort mit mindestens 12 Zeichen, eine E-Mail-Adresse und noch ist die Rolle für Leserechte vs. erweiterte Rechte frei wählbar  
+![Registrieren](https://github.com/eliseHtw/frontend_tools/blob/main/images_readme/tools_register.png)
+
 ## Entwicklungsumgebung
 
 ### Voraussetzungen zur Installation
