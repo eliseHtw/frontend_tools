@@ -20,11 +20,11 @@ Diese Anwendung soll die Möglichkeit bieten, für kreative Aktionen Hilfsmittel
 ### Kiste bearbeiten
 - zeigt alle vorhandenen Kisten an  
 ![Kiste bearbeiten](https://github.com/eliseHtw/frontend_tools/blob/main/images_readme/tools_edit.png)
+- es ist möglich einzelne Kisten ganz zu löschen über den Button `löschen`
 - es ist möglich neue Kisten hinzuzufügen über den Button `neue Kiste erstellen`  
 ![neue Kiste erstellen](https://github.com/eliseHtw/frontend_tools/blob/main/images_readme/tools_create.png)
 - es ist möglich einzelne Kisten zu aktualisieren über den Button `aktualisieren`  
 ![Kiste aktualisieren](https://github.com/eliseHtw/frontend_tools/blob/main/images_readme/tools_update.png)
-- es ist möglich einzelne Kisten ganz zu löschen über den Button `löschen`
 - (soll zu zukünftig nur für eingeloggte Benutzer*innen mit erweiterten Rechten sichtbar sein)  
 
 
