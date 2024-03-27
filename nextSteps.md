@@ -9,7 +9,7 @@
 ## Backend
 - Funktionen zu den möglichen Erweiterungen der Datenbank
 ## Frontend
-- Login fertig gestalten
+- Login fertig gestalten und funktional machen
 - dann für alle sichtbar: home, register und login
 - für user mit Leserechten zusätzlich sichtbar: kiste
 - für user mit erweiterten Rechten zusätzlich sichtbar: edit, create und update
@@ -19,6 +19,7 @@
 - register passwort wiederholen und checken, ob gleich
 - Abfragen: willst du den Eintrag wirklich so erstellen? / wirklich so ändern? / wirklich löschen? und erst dann entsprechend erstellen / ändern / löschen
 - Hinweise in allen Formularen auch schon anzeigen, wenn noch nicht rein geklickt wurde
+- Home als landing page auch im code und nicht nur auf der website
 
 ## Allgemein
 - Kisten über die Seite ausleihen (reservieren) können
@@ -30,5 +31,6 @@
 - weiter warten und updaten
 - Impressum, Datenschutzerklärung
 - lieber Tokens statt Login?
+- Doku verbessern
 
 tbc...
