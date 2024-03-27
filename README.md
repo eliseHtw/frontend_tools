@@ -36,6 +36,9 @@ Diese Anwendung soll die Möglichkeit bieten, für kreative Aktionen Hilfsmittel
 - benötigt wird ein Benutzer*innenname, ein Passwort mit mindestens 12 Zeichen, eine E-Mail-Adresse und noch ist die Rolle für Leserechte vs. erweiterte Rechte frei wählbar  
 ![Registrieren](https://github.com/eliseHtw/frontend_tools/blob/main/images_readme/tools_register.png)
 
+## Nächste Schritte
+- hier gibt es verschiedene Ideen, wie die Seite noch funktionaler, schöner, sinnvoller ... werden kann [Nächste Schritte](https://github.com/eliseHtw/frontend_tools/blob/main/nextSteps.md)
+
 ## Entwicklungsumgebung
 
 ### Voraussetzungen zur Installation
