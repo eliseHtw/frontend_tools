@@ -25,7 +25,7 @@ Diese Anwendung soll die Möglichkeit bieten, für kreative Aktionen Hilfsmittel
 ![neue Kiste erstellen](https://github.com/eliseHtw/frontend_tools/blob/main/images_readme/tools_create.png)
 - es ist möglich einzelne Kisten zu aktualisieren über den Button `aktualisieren`  
 ![Kiste aktualisieren](https://github.com/eliseHtw/frontend_tools/blob/main/images_readme/tools_update.png)
-- (soll zu zukünftig nur für eingeloggte Benutzer*innen mit erweiterten Rechten sichtbar sein)  
+- (soll zukünftig nur für eingeloggte Benutzer*innen mit erweiterten Rechten sichtbar sein)  
 
 
 ### Login
@@ -49,7 +49,7 @@ Diese Anwendung soll die Möglichkeit bieten, für kreative Aktionen Hilfsmittel
 - Angular: 17.0.5 / 17.3.1 (andere Versionen nicht geprüft)
 
 ### Installation
-- Das Repository backend_tools clonen, zu finden unter: [frontend_tools](https://github.com/eliseHtw/frontend_tools.git).
+- Das Repository frontend_tools clonen, zu finden unter: [frontend_tools](https://github.com/eliseHtw/frontend_tools.git).
 - Im eigenen Terminal in das Projektverzeichnis `frontend_tools` navigieren.
 - Für die Angular-Anwendung in das Verzeichnis `frontend_tools_start` navigieren.
 - Um die benötigten Abhängigkeiten zu installieren: `npm install` ausführen.
