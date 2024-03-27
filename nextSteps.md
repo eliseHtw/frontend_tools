@@ -28,5 +28,6 @@
 - E-Mail-Funktion, um bei Bedarf mit Benutzer*innen zu kommunizieren
 - weiter warten und updaten
 - Impressum, Datenschutzerklärung
+- lieber Tokens statt Login?
 
 tbc...
