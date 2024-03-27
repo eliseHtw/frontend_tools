@@ -47,7 +47,8 @@ Diese Anwendung soll die Möglichkeit bieten, für kreative Aktionen Hilfsmittel
 
 ### Installation
 - Das Repository backend_tools clonen, zu finden unter: [frontend_tools](https://github.com/eliseHtw/frontend_tools.git).
-- Im eigenen Terminal in das Projektverzeichnis frontend_tools navigieren.
+- Im eigenen Terminal in das Projektverzeichnis `frontend_tools` navigieren.
+- Für die Angular-Anwendung in das Verzeichnis `frontend_tools_start` navigieren.
 - Um die benötigten Abhängigkeiten zu installieren: `npm install` ausführen.
 - Im Verzeichnis src/app/environment `environment.ts` einfügen, mit folgendem Inhalt:  
 ```environment.ts
