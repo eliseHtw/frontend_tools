@@ -53,6 +53,7 @@ Diese Anwendung soll die Möglichkeit bieten, für kreative Aktionen Hilfsmittel
 - Im eigenen Terminal in das Projektverzeichnis `frontend_tools` navigieren.
 - Für die Angular-Anwendung in das Verzeichnis `frontend_tools_start` navigieren.
 - Um die benötigten Abhängigkeiten zu installieren: `npm install` ausführen.
+- "Für den Produktiv-Einsatz:" Und danach dann: `ng generate environment`
 - Im Verzeichnis src/app/environment `environment.ts` einfügen, mit folgendem Inhalt:  
 ```environment.ts
     export const environment = {
@@ -60,7 +61,7 @@ Diese Anwendung soll die Möglichkeit bieten, für kreative Aktionen Hilfsmittel
         apiUrl: '<URL_des_eigenen_Backends>'
     };
 ```
-
+- `ng build` ausführen
 - Frontend starten mit `ng serve`. Wenn das Backend erfolgreich gestartet wurde, sollte es dann so aussehen:  
 ![frontend_started](https://github.com/eliseHtw/frontend_tools/blob/main/images_readme/frontend_started.png)
 - Die Website ist dann im Browser über `localhost:4200` erreichbar. Bei Änderungen der Dateien lädt die Seite automatisch neu.
