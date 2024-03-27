@@ -17,6 +17,7 @@
 - header und nav fixed, so dass sie immer oben sind, auch beim runter scrollen
 - in create und update Dropdownmenüs zur Auswahl mit Option auf neue hinzufügen bzw. Status nur feste Auswahl
 - Abfragen: willst du den Eintrag wirklich so erstellen? / wirklich so ändern? / wirklich löschen? und erst dann entsprechend erstellen / ändern / löschen
+- Hinweise in allen Formularen auch schon anzeigen, wenn noch nicht rein geklickt wurde
 
 ## Allgemein
 - Kisten über die Seite ausleihen (reservieren) können
