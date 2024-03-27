@@ -46,9 +46,9 @@ export class KisteComponent implements OnInit {
      
     this.filterArray = this.tools.filter( (tool)  => {
       return (
-        tool.kategorie.toLowerCase().includes(this.searchString) ||
-        tool.artikel.toLowerCase().includes(this.searchString) ||
-        tool.details.toLowerCase().includes(this.searchString)
+        tool.kategorie.toLowerCase().includes(this.searchString.toLowerCase()) ||
+        tool.artikel.toLowerCase().includes(this.searchString.toLowerCase()) ||
+        tool.details.toLowerCase().includes(this.searchString.toLowerCase())
       );
     });
   }
